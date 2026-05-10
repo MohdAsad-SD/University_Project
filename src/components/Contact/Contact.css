@@ -1,0 +1,141 @@
+.contact_heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7%;
+    width: 100%;
+}
+.contact_main{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.top{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    gap: 5%;
+    margin-top: 5%;
+    width: 80%;
+    align-items: flex-start;
+}
+.icon_name h2{
+    display: flex;
+    gap: 10px;
+    color: #676767;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+}
+.left{
+    
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 25px;
+    padding: 10px;
+    width: 100%;
+
+}
+.right{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 10px;
+    font-size: 18px;
+    height: auto;
+}
+input{
+    padding: 12px;
+    background: #ebecfe;
+    border: none;
+    outline: none;
+}
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button
+{
+    -webkit-appearance: none;
+}
+.send_title{
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+
+}
+.send_title h1{
+    text-wrap: nowrap;
+    font-weight: 500;
+}
+.send_title img{
+    width: 40px;
+
+    
+}
+.icon_name img{
+    width: 28px;
+}
+.icon_name {
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    gap: 20px;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+      
+}
+textarea{
+    height: 100px;
+    padding: 10px;
+    background: #ebecfe;
+    border: none;
+      outline: none;
+      resize: none;
+
+}
+.sub_cont{
+    border-radius: 50px;
+    cursor: pointer;
+    border: none;
+    padding: 12px 20px;
+    height: 50px;
+    width: fit-content;
+    color: white;
+    font-size: 18px;
+    background: #212ea0;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.sub_cont img{
+    width: 20px;
+    transform: translateY(2px);
+}
+label{
+    color: #676767;
+}
+@media (max-width:768px){
+    .top{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    .send_title{
+        display: flex;
+        justify-content: flex-start;
+        gap: 35px;
+        font-size: 12px;
+    }
+}

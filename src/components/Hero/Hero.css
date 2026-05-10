@@ -1,0 +1,64 @@
+.hero{
+    width: 100%;
+    background: linear-gradient(rgba(8,0,58,0.7),rgba(8,0,58,0.7)), url('../../assets/hero.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: white;
+}
+.mid-of-hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 90%;
+    text-align: center;
+}
+.hero h1{
+    font-size: 50px;
+    color: white;
+
+}
+.hero p{
+    font-size: 20px;
+    max-width: 80%;
+
+}
+.explore{
+    border-radius: 50px;
+    cursor: pointer;
+    border: none;
+    padding: 12px 30px;
+    height: 50px;
+    width: auto;
+    font-size: 18px;
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.explore img{
+    width: 20px;
+    transform: translateY(2px);
+}
+@media (max-width:768px) {
+    .mid-of-hero{
+        max-width: 100%;
+        text-wrap: wrap;
+        padding: 0 20px;
+    }
+    .mid-of-hero h1{
+        font-size: 30px;
+    }
+    .mid-of-hero p{
+        font-size: 12px;
+    }
+}
