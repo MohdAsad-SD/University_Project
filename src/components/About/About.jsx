@@ -10,7 +10,7 @@ const About = () => {
   const [videoshow,setvideoshow]=useState(false);
   return (
     <>
-    <div s id='about' className='About-section'>
+    <div  id='about' className='About-section'>
       <div className="info">
         <p className='Heading'>About University</p>
         <h1 >Nurturing Tomorrow's Leaders Today</h1>

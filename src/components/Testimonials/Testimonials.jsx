@@ -37,7 +37,7 @@ const obj = [
   },
 ];
 
-const testimonials = () => {
+const Testimonials = () => {
   const windowswidth=window.innerWidth<=748 ? 1:2;
   const maxslide=Math.ceil(obj.length/windowswidth)-1;
   
@@ -54,8 +54,11 @@ const testimonials = () => {
   const [current,setCurrent]=useState(0);
   return (
     <div id="testimonials" className="main">
-      <p className="testi_title">TESTIMONIALS</p>
-      <h1 className="testi_stu">What Student Says</h1>
+      <div className="testi_top">
+          <p className="testi_title">TESTIMONIALS</p>
+        <h1 className="testi_stu">What Student Says</h1>
+      </div>
+      
       <div className="students_comments_section">
         <div onClick={prevSlide} className="prev">
           <img src={back} alt="" />
@@ -86,4 +89,4 @@ const testimonials = () => {
   );
 };
 
-export default testimonials;
+export default Testimonials;

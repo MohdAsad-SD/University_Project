@@ -45,6 +45,10 @@
     transform: translateY(0);
     opacity: 1;
     }
+    .titles{
+        width: 100%;
+        text-wrap: nowrap;
+    }
     
 }
 .programs img{
