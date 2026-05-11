@@ -148,6 +148,9 @@
         
         
     }
+    .testi_stu{
+        font-size: 25px;
+    }
     .testi_top{
     
     text-align: center;
@@ -157,6 +160,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-wrap: nowrap;
     padding: 0;
     
     }
