@@ -138,6 +138,7 @@ ul{
 }
 .navright.active{
     transform: translateX(0);
+    
 }
   
 }

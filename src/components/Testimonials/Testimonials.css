@@ -130,4 +130,11 @@
     .prev img{
         width: 20px;
     }
+    .main{
+        width: 100%;
+        
+    }
+    .main h1{
+        text-wrap: nowrap;
+    }
 }
