@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import about from '../../assets/about.png'
 import play from '../../assets/play-icon.png'
 import video from '../../assets/GreatStack.mp4'
@@ -8,6 +8,17 @@ import './About.css'
 
 const About = () => {
   const [videoshow,setvideoshow]=useState(false);
+  useEffect(()=>{
+    if(videoshow){
+      document.body.style.overflow="hidden";
+    }
+    else{
+      document.body.style.overflow="auto";
+    }
+    return ()=>{
+      document.body.style.overflow="auto";
+    }
+  },[videoshow]);
   return (
     <>
     <div  id='about' className='About-section'>
